@@ -1,6 +1,9 @@
-<h1>Eat the Burger</h1>
+<div class="burgerPage">
+    <img src="/public/assets/img/Burger.jpg" id="burgerPic">
+</div>
 
-<h2>Burgrs You Want to Eat</h2>
+
+<h2>Burgers You Want to Eat</h2>
 
 <ul>
     {{#each burgers}}
@@ -12,13 +15,15 @@
 
 <h2>Devoured Burgers</h2>
 
-<ul>
+<div class="devoured">
+    <table>
     {{#each burgers}}
     {{#if devoured}}
     {{> burgers/burger-block devoured=true}}
     {{/if}}
     {{/each}}
-</ul>
+    </table>
+</div>
 
 <h2>Add a burger you want to eat and click the "Submit" button</h2> 
 <form class="create-form">

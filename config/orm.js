@@ -1,5 +1,5 @@
 //import mysql
-var connection = require("../config/connection");
+var connection = require("../config/connection.js");
 
 //Select all burgers
 var orm = {
@@ -34,12 +34,9 @@ insertOne: function(table, cols, vals, cb) {
     }); 
 },
 //update a burger update burgers set column_name = value where id =
-updateOne: function(table, objColVals, condition, cb) {
-    var queryString = "UPDATE " + table;
-    queryString += " SET ";
-    queryString += objToSql(objColVals);
-    queryString += " WHERE ";
-    queryString += condition;
+updateOne: function(condition, cb) {
+    var queryString = "UPDATE burgers SET devoured = 1 WHERE ";
+       queryString += condition;
 
     console.log(queryString);
     connection.query(queryString, function(err, result) {

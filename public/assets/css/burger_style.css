@@ -1,0 +1,9 @@
+body {
+    background-color: darkgray;
+    background-image: url("burger.jpg");
+    background-position: no-repeat;
+}
+
+h1 {
+    color: black;
+}

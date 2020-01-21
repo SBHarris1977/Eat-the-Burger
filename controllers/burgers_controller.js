@@ -2,13 +2,13 @@ var express = require("express");
 var router = express.Router();
 
 //Import the burger.js model to use the database functions
-var burger = require("../models/burger");
+var burger = require("../models/burger.js");
 
 //Create route to retrieve data
 router.get("/", function(req, res) {
     burger.selectAll(function(data) {
         var hbsObject = {
-            cats: data
+            burgers: data
         };
         console.log(hbsObject);
         res.render("index", hbsObject);
