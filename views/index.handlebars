@@ -1,40 +1,15 @@
-<div class="burgerPage">
-    <img src="/public/assets/img/Burger.jpg" id="burgerPic">
-</div>
+<!DOCTYPE html> 
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="/public/assets/css/burger_style.css" type="text/css" />
+        <title>Eat the Burger!</title>
+        <script src="https://code.jquery.com/jquery.js"></script>
+        <script src="/public/assets/js/burger.js"</script>
+    </head>
 
+    
+<body> {{{ body }}}
 
-<h2>Burgers You Want to Eat</h2>
-
-<ul>
-    {{#each burgers}}
-    {{#unless devoured}}
-    {{> burgers/burger-block devoured=false}}
-    {{/unless}}
-    {{/each}}
-</ul>
-
-<h2>Devoured Burgers</h2>
-
-<div class="devoured">
-    <table>
-    {{#each burgers}}
-    {{#if devoured}}
-    {{> burgers/burger-block devoured=true}}
-    {{/if}}
-    {{/each}}
-    </table>
-</div>
-
-<h2>Add a burger you want to eat and click the "Submit" button</h2> 
-<form class="create-form">
-
-    <div class="new-burger">
-        <input type="text" id="burger">
-    </div>
-    <button type="submit">Submit</button>
-
-    <div class="eat-burger">
-        <input type="button" id="devour"><label>Devour It!</label>
-
-    </div>
-</form>
+    </body>
+</html>

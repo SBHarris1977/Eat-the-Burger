@@ -1,9 +1,14 @@
 body {
+    background-image: image("burger2.jpeg");
     background-color: darkgray;
-    background-image: url("burger.jpg");
     background-position: no-repeat;
 }
 
 h1 {
     color: black;
+}
+
+h2 {
+    color: black;
+    text-align: center;
 }
