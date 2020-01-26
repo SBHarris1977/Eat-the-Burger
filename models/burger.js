@@ -9,14 +9,14 @@ var burger = {
     },
 
     //the insert statement, the variables cols ans vals are arrays.
-    insertOne: function(cols, vals, cb) {
-        orm.insertOne("burgers", cols, val, function(res) {
+    insertOne: function(burger_name, devoured, cb) {
+        orm.insertOne(burger_name, devoured, function(res) {
             cb(res);
         });
     },
 //updating the burgers table
 updateOne: function(condition, cb) {
-    orm.updateOne("burgers",condition, function(res) {
+    orm.updateOne(condition, function(res) {
         cb(res);
     });
 }

@@ -14,19 +14,10 @@ var orm = {
     },
 
     //add or insert a new burger
-insertOne: function(table, cols, vals, cb) {
-    var query = "INSERT INTO " + table;
-
-    queryString += " (";
-    queryString += cols.toString();
-    queryString += " (";
-    queryString += "VALUES (";
-    queryString += printQuestionMarks(vals.length);
-    queryString += ") ";
-
-    console.log(queryString);
-
-    connection.query(queryString, vals, function(err, result) {
+insertOne: function(newBurger, cb) {
+    console.log("BURGER", newBurger)
+    var queryString = "INSERT INTO burgers (burger_name) VALUES (?)"
+        connection.query(queryString, newBurger, function(err, result) {
         if (err) {
             throw err;
         }
@@ -35,7 +26,7 @@ insertOne: function(table, cols, vals, cb) {
 },
 //update a burger update burgers set column_name = value where id =
 updateOne: function(condition, cb) {
-    var queryString = "UPDATE burgers SET devoured = 1 WHERE ";
+    var queryString = "UPDATE burgers SET devoured=1 WHERE ";
        queryString += condition;
 
     console.log(queryString);
@@ -45,7 +36,8 @@ updateOne: function(condition, cb) {
         }
         cb(result);
     });
-}
+},
+burgerfunct: function() {}
 };
 
 //export orm object to the model burger.js

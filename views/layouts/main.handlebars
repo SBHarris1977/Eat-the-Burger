@@ -1,37 +1,20 @@
-<h2>Burgers You Love!</h2><br>
+<!DOCTYPE html> 
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="assets/css/burger_style.css" type="text/css" />
+        <title>Eat the Burger!</title>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.1.3/flatly/bootstrap.min.css" />
+        
+        
+    </head>
 
+    
+<body>
+        {{{ body }}}
+     
+</body>
+<script src='/assets/js/burger.js'></script>
+</html>
 
-<ul>
-    {{#each burgers}}
-    {{#unless devoured}}
-    {{> burgers/burger-block}}
-    {{/unless}}
-    {{/each}}
-</ul>
-
-<h2>Devoured Burgers</h2>
-
-<div class="col">
-<table class="burgerD">
-    {{#each burgers}}
-    {{#if devoured}}
-    {{> burgers/burger-devour-block}}
-    {{/if}}
-    {{/each}}
-    </table>
-</div>
-
-
-<h4>Add a burger you want to eat and click the "Submit" button</h4> 
-<form class="create-form">
-
-    <div class="new-burger">
-        <input type="text" id="burger">
-    </div>
-    <button type="submit">Submit</button>
-
-    <div class="eat-burger">
-        <input type="button" id="devour"><label>Devour It!</label>
-
-    </div>
-</form>

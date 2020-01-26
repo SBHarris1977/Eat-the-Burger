@@ -1,14 +1,45 @@
 body {
-    background-image: image("burger2.jpeg");
     background-color: darkgray;
-    background-position: no-repeat;
+    margin-left: 60px;
+     
 }
 
-h1 {
-    color: black;
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 h2 {
     color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+}
+
+h1 {
+    color: black;
     text-align: center;
+}
+
+h4 {
+    color: mediumblue;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px ;
+}
+#burger-text {
+    width: 30%;
+    height: 15%;
+    padding-bottom: 15px;
+    margin-left: 35%;
+  
+
+}
+.burgerD {
+    border: 1px solid black;
+}
+
+#submit-button {
+    margin-left: 47%;
+    margin-top: 2%;
 }
