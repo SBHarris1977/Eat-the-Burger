@@ -18,4 +18,4 @@ Click the "Devour button for any burger in the list. The burger is then placed i
 and the "devoured" column is updated from 0 to 1.
 
 The app is created by using MySQL, Node, Express and Handlebars.
-![Eat-the-Burger](public\assets\img\Devoured burgers pic.png)
+![](https://github.com/SBHarris1977/Eat-the-Burger/blob/master/public/assets/img/Devoured%20burgers%20pic.PNG)
