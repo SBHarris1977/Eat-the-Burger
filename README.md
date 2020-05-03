@@ -10,12 +10,12 @@ Eat-the-Burger is a restaurant app that allows a user to enter burgers they'd li
 
 The new burger is identified with a unique ID, determined by the database.
 
-Additionally, in the database new burgers default to 0 in the "devoured" column.
-Therefore, the new burger appears in the "Burger List" on the left.
+New burgers "devoured" column defaults to 0 and appear in the burger list on the left as shown in the application.
 
-Burgers that are saved to database are paired with a "Devour" button.
+Once the new burger is entered and the "Submit" button is clicked the burger is saved to the database and paired with a "Devour" button.
 
-Once the "Devour button is clicked for the selected burger it is placed in the "Devoured Burgers List"
+Click the "Devour button for any burger in the list. The burger is then placed in the  "Devoured Burgers List" on the right
 and the "devoured" column is updated from 0 to 1.
 
 The app is created by using MySQL, Node, Express and Handlebars.
+![Eat-the-Burger](public\assets\img\Devoured burgers pic.png)
